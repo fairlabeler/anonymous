@@ -1,7 +1,7 @@
 This folder contains the Code of FairLabeler - https://drive.google.com/drive/folders/1YbldkbY_0C3voIQtkisRoQDj368kSxU5 
 
 
-### Overview of the datasets utilized in this study
+### Table  1 : Overview of the datasets utilized in this study
 
 | Dataset | Description | PA | Size | # Features |
 |---------|------------|----|------|-----------|
@@ -17,7 +17,7 @@ This folder contains the Code of FairLabeler - https://drive.google.com/drive/fo
 
 ---
 
-### Fairness and Performance Metrics Used in This Study
+###  Table  2 : Fairness and Performance Metrics Used in This Study
 
 *Note: FPR = FP / (TN + FP), and TPR = TP / (TP + FN).*
 
