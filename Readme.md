@@ -22,7 +22,19 @@ Subgroup Level Analysis - https://docs.google.com/document/d/12k3r0jBjazKNiWUTFh
 
 ---
 
-### Data Sources
+### Fairness and Performance Metrics Used in This Study
+
+*Note: FPR = FP / (TN + FP), and TPR = TP / (TP + FN).*
+
+| Fairness Metric | Definition | Ideal Value | Performance Metric | Definition | Ideal Value |
+|----------------|-----------|-------------|--------------------|------------|-------------|
+| **Average Odds Difference (AOD)** | Average disparity in TPR and FPR between unprivileged (U) and privileged (P) groups. <br> AOD = ½[(TPR<sub>U</sub> − TPR<sub>P</sub>) + (FPR<sub>U</sub> − FPR<sub>P</sub>)] | 0 | **Recall** | TP / (TP + FN) | 1 |
+| **Equal Opportunity Difference (EOD)** | Difference in TPR between unprivileged and privileged groups. <br> EOD = TPR<sub>U</sub> − TPR<sub>P</sub> | 0 | **Accuracy** | (TP + TN) / (TP + TN + FP + FN) | 1 |
+| **Statistical Parity Difference (SPD)** | Difference in probability of favorable outcome between groups. <br> SPD = P(Ŷ = 1 \| a = 0) − P(Ŷ = 1 \| a = 1) | 0 | **Precision** | TP / (TP + FP) | 1 |
+| **Disparate Impact (DI)** | Ratio of favorable outcome probabilities between groups. <br> DI = P(Ŷ = 1 \| a = 0) / P(Ŷ = 1 \| a = 1) | 1 | **F1 Score** | 2 × (Precision × Recall) / (Precision + Recall) | 1 |
+| **Flip Rate (FR)** | Proportion of instances where prediction changes when protected attribute is flipped. <br> FR = P(Ŷ[PA=0] ≠ Ŷ[PA=1]) | 0 | — | — | — |
+
+# References
 
 [1] **UCI Adult Dataset**, 1994.  
 http://mlr.cs.umass.edu/ml/datasets/Adult  
