@@ -1,5 +1,7 @@
 This folder contains the Code of FairLabeler - https://drive.google.com/drive/folders/1YbldkbY_0C3voIQtkisRoQDj368kSxU5 
 
+The ablation studies results are available in this link - https://drive.google.com/drive/folders/1qYz63XBFAsufE6jk1u265CG8kxLH5X2Q
+
 
 ### Table  1 : Overview of the datasets utilized in this study
 
